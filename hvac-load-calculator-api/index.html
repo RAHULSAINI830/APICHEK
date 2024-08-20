@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVAC Load Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HVAC Load Calculator</h1>
+        <form id="hvacForm">
+            <label for="climateRegion">Climate Region:</label>
+            <input type="text" id="climateRegion" name="climateRegion" required>
+
+            <label for="squareFootage">Square Footage:</label>
+            <input type="number" id="squareFootage" name="squareFootage" required>
+
+            <label for="ceilingHeight">Ceiling Height (feet):</label>
+            <input type="number" id="ceilingHeight" name="ceilingHeight" required>
+
+            <label for="insulationGrade">Insulation Grade (1-5):</label>
+            <input type="number" id="insulationGrade" name="insulationGrade" required>
+
+            <label for="sunExposure">Sun Exposure:</label>
+            <input type="text" id="sunExposure" name="sunExposure" required>
+
+            <label for="windows">Number of Windows:</label>
+            <input type="number" id="windows" name="windows" required>
+
+            <label for="sealTightness">Seal Tightness (1-5):</label>
+            <input type="number" id="sealTightness" name="sealTightness" required>
+
+            <label for="closedRoom">Closed Room (yes/no):</label>
+            <input type="text" id="closedRoom" name="closedRoom" required>
+
+            <label for="kitchen">Kitchen (yes/no):</label>
+            <input type="text" id="kitchen" name="kitchen" required>
+
+            <label for="occupants">Number of Occupants:</label>
+            <input type="number" id="occupants" name="occupants" required>
+
+            <label for="extraHeat">Extra Heat Sources (yes/no):</label>
+            <input type="text" id="extraHeat" name="extraHeat" required>
+
+            <button type="submit">Calculate Load</button>
+        </form>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
